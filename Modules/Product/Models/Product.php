@@ -21,6 +21,10 @@ class Product extends Model
     {
         return $this->hasMany(ProductImage::class,"product_id");
     }
+    public function group()
+    {
+        return $this->hasOne(ProductGroup::class,"group_id");
+    }
     protected static function newFactory()
     {
         return \Modules\Product\Database\factories\ProductFactory::new();

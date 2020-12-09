@@ -15,6 +15,10 @@ class ProductGroup extends Model
         "img_path",
         "description"
     ];
+    public function product()
+    {
+        return $this->hasOne(Product::class);
+    }
 
     protected static function newFactory()
     {
