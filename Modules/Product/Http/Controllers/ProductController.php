@@ -8,6 +8,7 @@ use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
+use Modules\Product\Http\Requests\ProductStoreRequest;
 use Modules\Product\Models\Product;
 use const App\Providers\HTTP_BAD_REQUEST;
 use const App\Providers\HTTP_OK;
@@ -26,10 +27,10 @@ class ProductController extends Controller
 
     /**
      * Store a newly created resource in storage.
-     * @param Request $request
+     * @param ProductStoreRequest $request
      * @return Application|ResponseFactory|Renderable|Response
      */
-    public function store(Request $request)
+    public function store(ProductStoreRequest $request)
     {
         if(Product::create($request->toArray())){
             return response(["message"=>trans("message.success")],HTTP_OK);
