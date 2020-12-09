@@ -1,0 +1,183 @@
+{
+    "project_property_fields": {
+		"project_shares": [
+			{"name" : "قمت کل" , "formControl" : "0"},
+			{"name" : "قیمت متر مربع" , "formControl" : "1"},
+			{"name" : "میانگین قیمت محله" , "formControl" : "2"},
+			{"name" : "تعداد کل سهام" , "formControl" : "3"},
+			{"name" : "حداقل خرید سهام" , "formControl" : "4"},
+			{"name" : "قیمت هر سهم" , "formControl" : "5"},
+			{"name" : "بیشترین سهامدار" , "formControl" : "6"},
+			{"name" : "تعداد سهام خریداری شده" , "formControl" : "7"},
+			{"name" : "تعداد سهام باقیمانده" , "formControl" : "8"},
+			{"name" : "تعداد سهم در صف خرید و فروش" , "formControl" : "9"},
+			{"name" : "تاریخ ورود به سیستم" , "formControl" : "10"}
+		],
+		"project_shares_controls": {
+			"0" : "" , 
+			"1" : "" ,
+			"2" : "" ,
+			"3" : "" ,
+			"4" : "" ,
+			"5" : "" ,
+			"6" : "" , 
+			"7" : "" ,
+			"8" : "" ,
+			"9" : "" ,
+			"10" : "" 
+		},
+		"project_income": [
+			{"name" : "قیمت اجاره ماهانه ملک" , "formControl": "0"},
+			{"name" : "قیمت اجاره ماهانه بر اساس هر سهم" , "formControl": "1"},
+			{"name" : "میانگین قیمت ماهانه اجاره" , "formControl": "2"},
+			{"name" : "وضعیت قیمت هر سهم" , "formControl": "3"},
+			{"name" : "هزینه نگهداری برای هر سهم" , "formControl": "4"},
+			{"name" : "هزینه های اداری" , "formControl": "5"}
+		],
+		"project_income_controls": {
+			"0" : "" , 
+			"1" : "" ,
+			"2" : "" ,
+			"3" : "" ,
+			"4" : "" ,
+			"5" : "" 
+		},
+        "project_basic_information": [
+        	{"name" : "تعداد طبقات" , "formControl" : "0"},
+        	{"name" : "تعداد واحد در طبقه" , "formControl" : "1"},
+        	{"name" : "طبقه وقوع" , "formControl" : "2"},
+        	{"name" : "تعداد سرویس بهداشتی" , "formControl" : "3"},
+			{"name" : "خواب مستر" , "formControl" : "4"},
+			{"name" : "متراژ" , "formControl" : "5"},
+			{"name" : "سال ساخت" , "formControl" : "6"},
+			{"name" : "تعداد پارکینگ" , "formControl" : "7"},
+			{"name" : "وضعیت استفاده" , "formControl" : "8"},
+			{"name" : "وضعیت" , "formControl" : "9"}
+		],
+		"project_basic_information_controls": {
+			"0" : "" , 
+			"1" : "" ,
+			"2" : "" ,
+			"3" : "" ,
+			"4" : "" ,
+			"5" : "" ,
+			"6" : "" ,
+			"7" : "" ,
+			"8" : "" ,
+			"9" : "" 
+		},
+		"project_properties" : [
+        	{"name" : "نما" , "formControl" : "0" , "items" : [
+				{"value": 0 , "name": "سنگ"},
+				{"value": 1 , "name": "کامپوزیت"},
+				{"value": 2 , "name": "آجر"},
+				{"value": 3 , "name": "سیمانی"},
+				{"value": 4 , "name": "شیشه ای"},
+				{"value": 5 , "name": "اتیکس"},
+				{"value": 6 , "name": "سرامیکی"},
+				{"value": 7 , "name": "مینرال"},
+				{"value": 8 , "name": "کنیتکس"},
+				{"value": 9 , "name": "نانو"}
+			]},
+        	{"name" : "کابینت" , "formControl" : "1" , "items" : [
+				{"value": 0 , "name": "هایگلاس"},
+				{"value": 1 , "name": "ممبران"},
+				{"value": 2 , "name": "ام دی اف"},
+				{"value": 3 , "name": "فلزی"},
+				{"value": 3 , "name": "چوب"}
+			]},
+        	{"name" : "سیستم گرمایش" , "formControl" : "2" , "items": [
+				{"value": 0 , "name": "بخاری"},
+				{"value": 1 , "name": "موتورخانه"},
+				{"value": 2 , "name": "پکیج"},
+				{"value": 3 , "name": "فنویل"},
+				{"value": 4 , "name": "چیلر"}
+			]},
+			{"name" : "سیستم سرمایش" , "formControl" : "3" , "items": [
+				{"value": 0 , "name": "کولر آبی"},
+				{"value": 1 , "name": "کولر گازی"},
+				{"value": 2 , "name": "فنویل"},
+				{"value": 3 , "name": "چیلر"}
+			]},
+			{"name" : "نوع سرویس بهداشتی" , "formControl" : "4" , "items": [
+				{"value": 0 , "name": "فرنگی"},
+				{"value": 1 , "name": "ساده"}
+			]},
+			{"name" : "جهت ملک" , "formControl" : "5" , "items": [
+				{"value": 0 , "name": "شمالی"},
+				{"value": 1 , "name": "جنوبی"}
+			]},
+			{"name" : "جنس کف" , "formControl" : "6" , "items": [
+				{"value": 0 , "name": "پارکت و لمینت"},
+				{"value": 1 , "name": "پی‌ وی‌ سی"},
+				{"value": 2 , "name": "بتنی"},
+				{"value": 3 , "name": " سرامیک"},
+				{"value": 4 , "name": "سنگ"},
+				{"value": 5 , "name": "موزاییک"}
+			]}
+		],
+		"project_properties_form": {
+			"0" : "" , 
+			"1" : "" ,
+			"2" : "" ,
+			"3" : "" ,
+			"4" : "" ,
+			"5" : "" ,
+			"6" : "" 
+		},
+		"project_options" : [
+			{"name" : "آسانسور" , "formControl": "0"},
+			{"name" : "انباری" , "formControl": "1"},
+			{"name" : "جکوزی" , "formControl": "2"},
+			{"name" : "سونا" , "formControl": "3"},
+			{"name" : "بالکن" , "formControl": "4"},
+			{"name" : "آیفون تصویری" , "formControl": "5"},
+			{"name" : "نورپردازی شده" , "formControl": "6"},
+			{"name" : "دوربین مداربسته" , "formControl": "7"},
+			{"name" : "سالن اجتماعات" , "formControl": "8"},
+			{"name" : "لابی مبله" , "formControl": "9"},
+			{"name" : "سالن ورزش" , "formControl": "10"},
+			{"name" : "آنتن مرکزی" , "formControl": "11"},
+			{"name" : "اطفاء حریق" , "formControl": "12"},
+			{"name" : "روف گاردن"  , "formControl": "13" },
+			{"name" : "اعلان حریق"  , "formControl": "14" },
+			{"name" : "باربیکیو"  , "formControl": "15" },
+			{"name" : "تهویه مطبوع"  , "formControl": "16" },
+			{"name" : "پارکینگ"  , "formControl": "17" },
+			{"name" : "پنجره دوجداره"  , "formControl": "18" },
+			{"name" : "شومینه"  , "formControl": "19" },
+			{"name" : "گرمایش از کف" , "formControl": "20" }
+		],
+		"project_options_form": {
+			"0" : "" ,
+			"1" : "" , 
+			"2" : "" ,
+			"3" : "" ,
+			"4" : "" ,
+			"5" : "" ,
+			"6" : "" ,
+			"7" : "" ,
+			"8" : "" ,
+			"9" : "" ,
+			"10" : "" ,
+			"11" : "" ,
+			"12" : "" ,
+			"13" : "" ,
+			"14" : "" ,
+			"15" : "" ,
+			"16" : "" ,
+			"17" : "" ,
+			"18" : "" ,
+			"19" : "" ,
+			"20" : "" ,
+			"21" : "" ,
+			"22" : "" 			
+		},
+		"project_documents" : [
+			{"name" : "تصویر سند"},
+			{"name" : "پایان کار شهرداری"},
+			{"name" : "عوارض نوسازی"},
+			{"name" : "پلن ساختمان"}
+		]
+    }
+}

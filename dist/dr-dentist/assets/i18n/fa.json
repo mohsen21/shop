@@ -1,0 +1,230 @@
+{
+  "campaign": {
+    "update": "ویرایش کمپین",
+    "new": {
+      "~": "افزودن کمپین"
+    }
+  },
+  "contract": {
+    "update": "ویرایش SLA",
+    "new": {
+      "~": "افزودن SLA"
+    },
+    "ola": {
+      "update": "ویرایش OLA",
+      "new": {
+        "~": "افزودن OLA"
+      }
+    }
+  },
+  "rf": {
+    "~": "احیا و سوابق",
+    "update": "ویرایش",
+    "new": "افزودن"
+  },
+  "tdf": {
+    "new": "افزودن",
+    "update": "ویرایش"
+  },
+  "data-mining": {
+    "~": "داده کاوی",
+    "update": "ویرایش",
+    "new": "افزودن"
+  },
+  "ticket": {
+    "dynamic-field": "فرم براساس موضوع",
+    "list": {
+      "myself": "خودم",
+      "all": "همه",
+      "assignee": "ارجاع شده به"
+    },
+    "create": {
+      "select-assignee": "انتخاب کاربر برای ارجاع تیکت"
+    }
+  },
+  "flowform": {
+    "update": "ویرایش Flow",
+    "new": {
+      "~": "افزودن Flow"
+    }
+  },
+  "subject": {
+    "flow-role": "نقش فلو"
+  },
+  "entity": {
+    "subject": "موضوع",
+    "file": "فایل",
+    "role": "نقش",
+    "user": "کاربر",
+    "filter": "فیلتر",
+    "permission": "دسترسی",
+    "transition": "ارجاع",
+    "ticket": "تیکت",
+    "calendar": "تقویم",
+    "transaction-drop-form": "علت افت",
+    "revival-form": "احیا",
+    "note": "یادداشت",
+    "preset-ticket": "موضوع پیش فرض",
+    "organization": "سازمان",
+    "OLA": "OLA",
+    "SLA": "SLA",
+    "Campagin": "کمپین",
+    "data-mining": "فرم داده کاوی",
+    "forms": "فرم",
+    "flowform": "Flow",
+    "callback": "تنظیمات برگشت تماس",
+    "message": "پیام",
+    "email": "ایمیل",
+    "extension_id" : "شناسه agent"
+  },
+  "operation": {
+    "add": {
+      "title": "اضافه",
+      "message": "اضافه شد."
+    },
+    "update": {
+      "title": "ویرایش",
+      "message": "ویرایش شد."
+    },
+    "create": {
+      "title": "ایجاد",
+      "message": "ایجاد شد"
+    },
+    "delete": {
+      "title": "حذف",
+      "message": "حذف شد."
+    },
+    "upload": {
+      "title": "اپلود",
+      "message": "اپلود شد."
+    },
+    "complete": {
+      "title": "",
+      "message": "انجام شد"
+    },
+    "move": {
+      "title": "انتقال",
+      "message": "انتقال یافت"
+    },
+    "apply": {
+      "title": "اعمال",
+      "message": "اعمال یافت"
+    },
+    "send": {
+      "title": "ارسال",
+      "message": "ارسال شد"
+    },
+    "submit": {
+      "title": "ثبت",
+      "message": "ثبت شد"
+    }
+  },
+  "confirm": {
+    "message": "آیا اطمینان دارید؟"
+  },
+  "notify": {
+    "success": {
+      "title": "{{ operation.title }} {{ entity }}",
+      "message": "{{ name }} با موفقیت {{ operation.message }}"
+    },
+    "upload-type-error": {
+      "title": "خطا در نوع فایل",
+      "message": "\"{{ fileName }}\" قابل قبول نیست"
+    },
+    "upload-size-error": {
+      "title": "خطا در حجم فایل",
+      "message": "حجم \"{{ fileName }}\" بیش از محدودیت است"
+    },
+    "select-image-overlimit": {
+      "title": "انتخاب بیش از حد",
+      "message": "نمی توانید بیش از {{ countLimit }} تصویر انتخاب کنید"
+    }
+  },
+  "error": {
+    "400": {
+      "title": "درخواست نادرست",
+      "message": "اطلاعات وارد شده صحیح نمی باشد"
+    },
+    "401": {
+      "title": "غیر مجاز",
+      "message": "نیازمند احراز هویت مجدد"
+    },
+    "403": {
+      "title": "خطای شماره ۴۰۳",
+      "message": "شما به صفحه موردنظر دسترسی ندارید"
+    },
+    "404": {
+      "title": "یافت نشد",
+      "message": "موردی یافت نشد"
+    },
+    "406": {
+      "title": "فرم تکراری",
+      "message": "برای وضعیت {{status}} از تسک {{issue_type_id}} فرم تکراری می باشد."
+    },
+    "204": {
+      "title": "جستجوی مشتری",
+      "message": "موردی یافت نشد"
+    },
+    "424": {
+      "title": "اطلاعات نادرست",
+      "message": "کاربری برای نقش مورد نظر وجود ندارد"
+    },
+    "428": {
+      "title": "اطلاعات نادرست",
+      "message": "کاربری در نمایندگی برای نقش مورد نظر وجود ندارد"
+    },
+    "417": {
+      "title": "اطلاعات نادرست",
+      "message": "موضوع مورد نظر فاقد نقش عامل میباشد"
+    },
+    "402": {
+      "title": "نیازمند تکمیل فرم های مربوطه"
+    },
+    "500": {
+      "title": "خطا در ارتباط",
+      "message": "خطا در ارتباط با سرور"
+    },
+    "exist": {
+      "title": "",
+      "message": "قبلا به داشبورد نگهداشت اضافه شده است"
+    },
+    "duplicate": {
+      "title": "",
+      "message": "این فیلد قبلا توسط کاربر دیگری استفاده شده است"
+    },
+    "duplicate-role": {
+      "title": "نقش تکراری",
+      "message": "این نقش قبلا انتخاب شده است"
+    },
+    "blank": {
+      "title": "درخواست نادرست",
+      "message": "فیلد نوع درخواست خالی میباشد"
+    }
+  },
+  "form": {
+    "feedback": {
+      "required": "این قسمت باید پر شود!",
+      "notmatch": "رمز عبور مطابقت ندارد",
+      "minlength": "حداقل {{ e.requiredLength }} حرف باشد. ({{ e.actualLength }})",
+      "maxlength": "حداکثر {{ e.requiredLength }} حرف باشد. ({{ e.actualLength }})",
+      "max": "این فیلد نمیتواند بیشتر از {{ e.max }} باشد",
+      "min": "این فیلد نمیتواند کمتر از {{ e.min }} باشد",
+      "pattern": "مقدار وارد شده نامعتبر است"
+    }
+  },
+  "dropzone": {
+    "upload-button": "انتخاب فایل",
+    "help": "تصاویر خود را انتخاب نمایید یا آنهارا بارگذاری کنید",
+    "remove": "حذف تصویر"
+  },
+  "pagination": {
+    "first": "ابتدا",
+    "previous": "قبلی",
+    "next": "بعدی",
+    "last": "انتها",
+    "go": "برو به"
+  },
+  "close": "بستن",
+  "list-empty": "موردی برای نمایش وجود ندارد",
+  "choose": "انتخاب کنید"
+}

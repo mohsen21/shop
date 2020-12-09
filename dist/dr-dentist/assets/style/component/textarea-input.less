@@ -1,0 +1,25 @@
+div[contenteditable] {
+    height: 250px;
+    overflow-y: auto;
+    border: 1px solid @border;
+    padding: 5px 15px;
+    -moz-appearance: textarea;
+    -webkit-appearance: textarea;
+    appearance: textarea;
+    display: block;
+    width: auto;
+    position: relative;
+    span.input-item-remove {
+        display: inline-block;
+        background: #f0f0f0;
+        padding: 2px;
+        margin: 2px;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    &:empty:before {
+        content: attr(data-placeholder);
+        color: @base-orange;
+    }
+}

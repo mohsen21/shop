@@ -1,0 +1,209 @@
+.speedmotor {
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+// ===================Simple Graph========================
+
+.simple-graph {
+    width          : 300px;
+    height         : 150px;
+    position       : relative;
+    text-align     : center;
+    color          : @white;
+    font-size      : 22px;
+    font-weight    : 600;
+    border-radius  : 150px 150px 0 0;
+    overflow       : hidden;
+    color          : var(--fill);
+    display        : flex;
+    align-items    : flex-end;
+    justify-content: center;
+    box-sizing     : border-box;
+    z-index: 0;
+
+    &:before,
+    &:after {
+        content         : '';
+        width           : 300px;
+        height          : 150px;
+        border          : 50px solid var(--fill);
+        border-top      : none;
+        position        : absolute;
+        transform-origin: 50% 0% 0;
+        border-radius   : 0 0 300px 300px;
+        box-sizing      : border-box;
+        left            : 0;
+        top             : 100%;
+    }
+
+    &:before {
+        border-color: rgba(0, 0, 0, .15);
+        transform   : rotate(180deg);
+    }
+
+    &:after {
+        z-index  : 3;
+        animation: 1s fillGraphAnimation ease-in;
+        transform: rotate(calc(1deg * (var(--percentage) * 1.8)));
+    }
+
+    &:hover {
+        &:after {
+            opacity: .75;
+            cursor : pointer;
+        }
+    }
+}
+
+// ===================Multi Semi Donut Chart ========================
+
+.multi-graph {
+    width          : 300px;
+    height         : 150px;
+    position       : relative;
+    color          : @white;
+    font-size      : 22px;
+    font-weight    : 600;
+    display        : flex;
+    align-items    : flex-end;
+    justify-content: center;
+    overflow       : hidden;
+    box-sizing     : border-box;
+
+    &:before {
+        content         : '';
+        width           : 300px;
+        height          : 150px;
+        border          : 50px solid rgba(0, 0, 0, .15);
+        border-bottom   : none;
+        position        : absolute;
+        box-sizing      : border-box;
+        transform-origin: 50% 0%;
+        border-radius   : 300px 300px 0 0;
+        left            : 0;
+        top             : 0;
+    }
+
+    .graph {
+        width           : 300px;
+        height          : 150px;
+        border          : 50px solid var(--fill);
+        border-top      : none;
+        position        : absolute;
+        transform-origin: 50% 0% 0;
+        border-radius   : 0 0 300px 300px;
+        left            : 0;
+        top             : 100%;
+        z-index         : 5;
+        animation       : 1s fillGraphAnimation ease-in;
+        transform       : rotate(calc(1deg * (var(--percentage) * 1.8)));
+        box-sizing      : border-box;
+        cursor          : pointer;
+
+        &:after {
+            // content      : attr(data-name) ;
+            content         : attr(data-name) ' 'counter(varible) '%';
+            counter-reset   : varible var(--percentage);
+            background      : var(--fill);
+            box-sizing      : border-box;
+            border-radius   : 2px;
+            color           : @white;
+            font-weight     : 200;
+            font-size       : 12px;
+            height          : 20px;
+            padding         : 3px 5px;
+            top             : 0px;
+            position        : absolute;
+            left            : 0;
+            transform       : rotate(calc(-1deg * var(--percentage) * 1.8)) translate(-30px, 0px);
+            transition      : 0.2s ease-in;
+            transform-origin: 0 50% 0;
+            opacity         : 0;
+        }
+
+        &:hover {
+            opacity: 0.75;
+
+            &:after {
+                opacity: 1;
+                left   : 30px;
+            }
+        }
+    }
+}
+
+@keyframes fillAnimation {
+    0% {
+        transform: rotate(-45deg);
+    }
+
+    50% {
+        transform: rotate(135deg);
+    }
+}
+
+@keyframes fillGraphAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+}
+
+progress,
+progress[role] {
+    -webkit-appearance: none;
+    -moz-appearance   : none;
+    appearance        : none;
+    border            : none;
+    background-size   : auto;
+    height            : 25px;
+    width             : 100%;
+    direction         : rtl;
+}
+
+.skill-list {
+    list-style: none;
+    margin    : 0px;
+    padding   : 0px;
+
+    .skill {
+        margin  : 5px 0px;
+        position: relative;
+
+        p {
+            display        : flex;
+            justify-content: space-between;
+            margin         : 0px 0px 10px 0px;
+
+            span {
+                display: inline-block;
+            }
+        }
+
+        &::-webkit-progress-value {
+            -webkit-animation: bar-fill 0.5s;
+            width            : 0px;
+        }
+
+        progress {
+
+            &::-webkit-progress-value {
+                background: @base-blue;
+            }
+
+            &::-moz-progress-bar {
+                background: @base-blue;
+            }
+        }
+    }
+}
+
+@keyframes bar-fill {
+    0% {
+        width: 0px;
+    }
+}

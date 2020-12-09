@@ -1,0 +1,87 @@
+.operation {
+    position: relative;
+
+    &:hover .operation-bg {
+        width   : max-content;
+        overflow: unset;
+        z-index: 5;
+    }
+
+    .operation-bg {
+        position        : absolute;
+        top             : 10px;
+        right           : 7.5px;
+        background-color: @primery;
+        padding         : 2.5px 0px;
+        width           : 21px;
+        height          : 21px;
+        overflow        : hidden;
+        border-radius   : 30px;
+        text-align      : center;
+        transition      : 0.5s;
+
+        .operation-base {
+            margin: 0px;
+        }
+
+        i {
+            margin        : 0px 5px;
+            vertical-align: 1.5px;
+            font-size     : 16px;
+            color         : #ffffff;
+            cursor        : pointer;
+        }
+    }
+}
+
+.operation-ltr {
+    position: relative;
+
+    &:hover .operation-bg {
+        width   : max-content;
+        overflow: unset;
+        z-index: 5;
+    }
+
+    .operation-bg {
+        position        : absolute;
+        top             : 10px;
+        left            : 7.5px;
+        background-color: @primery;
+        padding         : 2.5px 0px;
+        width           : 21px;
+        height          : 21px;
+        overflow        : hidden;
+        border-radius   : 30px;
+        text-align      : center;
+        transition      : 0.5s;
+
+        .operation-base {
+            margin: 0px;
+        }
+
+        i {
+            margin        : 0px 5px;
+            vertical-align: 1.5px;
+            font-size     : 16px;
+            color         : #ffffff;
+            cursor        : pointer;
+        }
+    }
+}
+
+.operation_nothover{
+    width: fit-content !important;
+    padding: 0 !important;
+    text-align: center;
+    font-weight: bold;
+    /* width: 40px; */
+    /* padding: 0; */
+    padding: 10px 25px 10px 10px !important;
+    display: flex;
+
+    a{
+        padding-left: 5px;
+        cursor: pointer;
+    }
+}

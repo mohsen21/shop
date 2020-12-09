@@ -1,0 +1,414 @@
+html {
+  body {
+    direction       : rtl;
+    width           : 100%;
+    height          : 100%;
+    // background: linear-gradient(90deg,#735acd 34%,rgba(156,38,38,.90239846));
+    background-color: #f5f5f5;
+
+    .login-card {
+      border-radius: .5rem;
+      background-color: #fff;
+      position: relative;
+      text-align: justify;
+      padding: 1.5rem;
+      box-shadow: 0 0 16px rgba(0,0,0,.1);
+    }
+
+    .image-header{
+      height: 100vh;
+      margin-bottom: 60px;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      background-color: #000;
+      img{
+        width: 100%;
+        opacity: 0.7;
+      }
+      canvas{
+        width: 100%;
+        opacity: 0.7;
+        height: 100%;
+      }
+      h2{
+        position: absolute;
+        top: 37%;
+        text-align: center;
+        width: 100%;
+        font: 35px 'IRAN-SANS';
+        font-weight: 500;
+        color: #fff;
+      }
+      h3 {
+        position: absolute;
+        top: 47%;
+        text-align: center;
+        width: 100%;
+        a {
+          font: 20px 'IRAN-SANS';
+          font-weight: 500;
+          color: #fff;
+          padding: 5px 10px;
+          text-decoration: none;
+        }
+        span{
+          font: 20px 'IRAN-SANS';
+          font-weight: 500px;
+          color: #fff;
+        }
+      }
+    }
+
+    h3 , h4 , h1 , h2 , h5 , h6 , p{
+      color: #757575;
+    }
+
+    .text-underline {
+      text-decoration: underline;
+    }
+
+    .btn-danger{
+      background-color: @unsucces;
+      border-color: @unsucces;
+    }
+
+    .simple-notification{
+      border-radius: 65px;
+    }
+
+    .cusrsor-pointer{
+      cursor: pointer;
+    }
+
+    .list-total-count {
+      display        : flex;
+      justify-content: space-between;
+      align-items    : center;
+    }
+
+    .list-total-count {
+      span:nth-child(1) {
+        margin-top: 0 !important;
+      }
+    }
+
+    .informationContentContent {
+      .lds-dual-ring {
+        width: 80px;
+      }
+
+      .lds-dual-ring:after {
+        content      : " ";
+        display      : block;
+        width        : 20px;
+        height       : 20px;
+        border-radius: 50%;
+        border       : 2px solid #000;
+        border-color : #000 transparent #000 transparent;
+        animation    : lds-dual-ring 1.2s linear infinite;
+      }
+
+      span:nth-child(1) {
+        font-weight: 600;
+        display    : block;
+        margin-top : 10px;
+        margin-left: 5px;
+        text-align : right;
+      }
+
+      span:nth-child(2) {
+        text-align: right;
+      }
+    }
+
+    .customerModeOperation {
+      .lds-dual-ring:after {
+        content      : " ";
+        display      : block;
+        width        : 15px;
+        height       : 15px;
+        border-radius: 50%;
+        border       : 2px solid #000;
+        border-color : #000 transparent #000 transparent;
+        animation    : lds-dual-ring 1.2s linear infinite;
+      }
+    }
+
+    .ticket-file-upload-check-button {
+      display: flex;
+      padding: 4px 0;
+    }
+
+    .dialog {
+      margin          : 60px auto;
+      background-color: #fff;
+      height          : 640px;
+      overflow        : auto;
+      width           : 1000px;
+      padding         : 10px;
+
+      .add-image-button {
+        overflow     : hidden;
+        width        : 10rem;
+        height       : 10rem;
+        position     : relative;
+        border       : 0.2rem dashed #e5e5e5;
+        border-radius: 1rem;
+        display      : block;
+        text-align   : center;
+        padding      : 0.5rem;
+        cursor       : pointer;
+        transition   : all 200ms linear;
+
+        .icon {
+          width     : 3rem;
+          height    : 3rem;
+          font-size : 3rem;
+          display   : block;
+          position  : absolute;
+          top       : 0;
+          bottom    : 0;
+          left      : 0;
+          right     : 0;
+          margin    : auto;
+          transition: all 200ms linear;
+        }
+
+        img {
+          height: 100%;
+          width : 100%;
+        }
+
+        .selected-image-item {
+          width     : 3rem;
+          height    : 3rem;
+          font-size : 3rem;
+          display   : block;
+          position  : absolute;
+          top       : 0;
+          bottom    : 0;
+          left      : 0;
+          right     : 0;
+          margin    : auto;
+          transition: all 200ms linear;
+        }
+      }
+    }
+
+    .AgencyPerformanceDetail {
+      .info-list-content {
+        min-height: 43px;
+
+        .informationContentIcon {
+          &:hover i:not(.kpi-icon) {
+            background-color: @base-blue;
+            color           : #fff;
+          }
+
+          .kpi-icon {
+            background-color: @base-blue;
+            color           : #fff;
+          }
+
+          i {
+            width           : 40px;
+            height          : 40px;
+            background-color: #fff;
+            border-radius   : 50%;
+            box-shadow      : 0 4px 5px 0 @shadow;
+            color           : #334466;
+            text-align      : center;
+            font-size       : 15px;
+            padding-top     : 12px;
+          }
+        }
+
+        .info-list {
+          margin-top: -20px;
+          width     : 100%;
+        }
+
+        .queues-show-list {
+          padding   : 7px 16px;
+          width     : 100%;
+          font-size : 15px;
+          display   : flex;
+          flex-flow : wrap;
+          margin-top: 7px;
+        }
+      }
+    }
+
+    .call-dashboard,
+    .dealership-dashboard {
+      .box {
+        position: relative;
+        width   : 100%;
+        height  : 125px;
+
+        p {
+          margin: 0;
+        }
+
+        span {
+          position        : absolute;
+          bottom          : 0;
+          left            : 0;
+          display         : inline-block;
+          background-color: @base-blue;
+          width           : 75px;
+          height          : 75px;
+          text-align      : center;
+          font-weight     : bold;
+          font-size       : 26px;
+          color           : #ffffff;
+          border-radius   : 50%;
+          padding         : 17.5px 0;
+        }
+
+        i {
+          position : absolute;
+          bottom   : 0;
+          right    : 0;
+          display  : inline-block;
+          font-size: 72px;
+          color    : #303f9f;
+        }
+
+        img {
+          position     : absolute;
+          bottom       : 0;
+          left         : 0;
+          display      : inline-block;
+          width        : 50px;
+          height       : 50px;
+          border-radius: 50%;
+        }
+      }
+
+      .box-progress {
+        height: 120px;
+      }
+    }
+
+    .modal-custom {
+      position : absolute;
+      top      : 60px;
+      right    : 7.5px;
+      left     : 7.5px;
+      animation: move 2.5s;
+
+      &::before {
+        content         : "";
+        position        : fixed;
+        top             : 0;
+        bottom          : 0;
+        right           : 0;
+        left            : 0;
+        width           : 100%;
+        height          : 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .rate {
+        text-align: center;
+        direction : ltr;
+        font-size : 12px;
+
+        i {
+          margin: 0px 2.5px;
+        }
+
+        .checked {
+          color: #f57c00;
+        }
+      }
+
+      @keyframes move {
+        from {
+          visibility: hidden;
+          opacity   : 0;
+          top       : -100px;
+        }
+
+        to {
+          visibility: visible;
+          opacity   : 1;
+          top       : 60px;
+        }
+      }
+
+      .content {
+        .item {
+          display        : flex;
+          justify-content: space-between;
+          margin-bottom  : 5px;
+          color          : #505050;
+        }
+      }
+    }
+
+    .customers-portal {
+      .items {
+        a {
+          color: #303f9f;
+
+          div {
+            position     : relative;
+            box-shadow   : 0 4px 5px 0 @shadow;
+            height       : 250px;
+            border-radius: 16px;
+            z-index      : 1;
+
+            &::before {
+              content      : "";
+              position     : absolute;
+              border-radius: 16px;
+              bottom       : 0;
+              left         : 0;
+              right        : 0;
+              width        : 100%;
+              height       : 0;
+              transition   : 0.5s;
+            }
+
+            &:hover img {
+              opacity   : 0.5;
+              transition: 0.5s;
+            }
+
+            &:hover p {
+              background-color: @base-blue;
+              color           : white;
+            }
+
+            &:hover:before {
+              height: 100%;
+            }
+
+            img {
+              width        : 100%;
+              border-radius: 16px;
+              height       : 250px;
+              z-index      : 0;
+            }
+
+            p {
+              position        : absolute;
+              bottom          : 0;
+              left            : 0;
+              right           : 0;
+              background-color: #fff;
+              width           : 100%;
+              border-radius   : 0 0 16px 16px;
+              text-align      : center;
+              padding         : 6px;
+              margin          : 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

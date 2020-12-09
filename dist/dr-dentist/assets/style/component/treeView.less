@@ -1,0 +1,79 @@
+.toggle-children-wrapper-collapsed .toggle-children {
+    transform: rotate(180deg)!important;
+}
+.treeCard {
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
+}
+.op-style{
+    position: initial;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0.8;
+    margin-right: 5px;
+    vertical-align: middle;
+    
+}
+.operation:hover .op-style {
+    width: max-content;
+    height: 20px;
+    overflow: unset;
+    z-index: 5;
+}
+.operation .op-style i {
+    margin: 0px 5px;
+    vertical-align: -2.5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.operation .op-style i.fa-edit {
+   color: #66bb6a;
+}
+.operation .op-style i.fa-times {
+    color: #ef5350;
+ }
+ .operation .op-style i.fa-plus {
+    color: #42a5f5;;
+ }
+ .display-flex{
+    display: flex;
+ }
+.node-content-wrapper {
+    display: inline;
+}
+.node-content-wrapper-active.node-content-wrapper-focused , 
+    .node-content-wrapper-active, 
+    .node-content-wrapper.node-content-wrapper-active:hover, 
+    .node-content-wrapper-active.node-content-wrapper-focused 
+{
+        background: white;
+}
+
+.toggle-children-wrapper-collapsed .toggle-children{
+    background-image: url("/assets/image/subject/add.png");
+    width: 25px;
+    height: 25px;    
+}
+.vertical-align-0 {
+    vertical-align: 0 !important;
+}
+.toggle-children-wrapper-expanded .toggle-children {
+    background-image: url("/assets/image/subject/minus.png");
+    width:25px;
+    height: 25px;
+    transform: none;
+}
+.tooltip .tooltipText.custimize{
+  background-color: gray;
+}
+tree-viewport{
+    overflow: inherit;
+} 
+.tree-children{
+    overflow: inherit;
+}
+tree-root .angular-tree-component-rtl .tree-children {
+    padding-right: 40px;
+}

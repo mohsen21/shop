@@ -1,0 +1,99 @@
+html {
+    body {
+        margin: 0px;
+
+        .row-content {
+            display  : flex;
+            flex-wrap: wrap;
+        }
+
+        .col-left {
+            width       : 100%;
+            overflow    : hidden;
+            min-height  : 760px;
+            transition  : all 0s;
+        }
+
+        .pag-title {
+            position   : relative;
+            display    : inline-block;
+            font-weight: bold;
+            font-size  : 30px;
+            color      : @text;
+            margin     : 0px;
+        }
+
+        // FullWidth
+        .width-100 {
+            width: 100%;
+        }
+
+        .height-100 {
+            height: 100%;
+        }
+        @media (max-width: 1106px) {
+            aside{
+                .icon-bar-content{
+                    .icon-bar{
+                        i{
+                            font-size: 13.5px;
+                        }
+                    }  
+                } 
+                .company-name{
+                    span{
+                        font-size: 16px;
+                    }
+                } 
+                .menu{
+                    ul{
+                        .dropdown{
+                            a{
+                                font-size: 15px;
+                            }
+                        }
+                    } 
+                } 
+            }
+            #close{
+                i{
+                    right: 18%;
+                }
+            } 
+        }
+        @media (max-width: 950px) {
+            .col-right{
+                width: 32%;
+            }
+            .col-left{
+                width: 100%!important;
+                margin: 0% 50px 0% 0%!important;
+            }
+            #close{
+                i{
+                    right: 30%;
+                }
+            }
+        }
+        @media (max-width: 550px) {
+            .col-right{
+                width: 45%;
+            }
+            #close{
+                i{
+                    right: 41%;
+                }
+            }
+        }
+        @media (max-width: 400px) {
+            .col-right{
+                width: 50%;
+            }
+            #close{
+                i{
+                    right: 45%;
+                }
+            }
+        }
+    }
+}

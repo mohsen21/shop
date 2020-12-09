@@ -1,0 +1,180 @@
+// Tabs level 1
+.tabset>input[type="radio"] {
+    position  : absolute;
+    visibility: hidden;
+}
+
+.tabset .tab-panel {
+    body {
+        padding: 12px;
+    }
+
+    display: none;
+}
+
+each(range(400), {
+    @first: @value * 2 + 1;
+    @second: @value + 1;
+    .tabset>input:nth-child(@{first}):checked~.tab-panels>.tab-panel:nth-child(@{second}) {
+        display: block;
+    }
+});
+
+.tabset>input:first-child:checked~.tab-panels>.tab-panel:first-child {
+    display: block;
+}
+
+// .tabset>input:first-child:checked~.tab-panels>.tab-panel:first-child,
+// .tabset>input:nth-child(3):checked~.tab-panels>.tab-panel:nth-child(2),
+// .tabset>input:nth-child(5):checked~.tab-panels>.tab-panel:nth-child(3),
+// .tabset>input:nth-child(7):checked~.tab-panels>.tab-panel:nth-child(4),
+// .tabset>input:nth-child(9):checked~.tab-panels>.tab-panel:nth-child(5),
+// .tabset>input:nth-child(11):checked~.tab-panels>.tab-panel:nth-child(6),
+// .tabset>input:nth-child(13):checked~.tab-panels>.tab-panel:nth-child(7) {
+//     display: block;
+// }
+
+.tabset>label {
+    position     : relative;
+    display      : inline-block;
+    padding      : 12px 12px 12px;
+    border       : 1px solid transparent;
+    border-bottom: 0;
+    cursor       : pointer;
+    font-weight  : bold;
+    color        : @white;
+    transition   : 0.5s;
+}
+
+.tabset>label::after {
+    // content   : "";
+    position  : absolute;
+    left      : 0px;
+    right     : 0px;
+    bottom    : 10px;
+    background: @white;
+    width     : 50%;
+    height    : 2.5px;
+    margin    : 0px auto;
+    transition: 0.5s;
+}
+
+.tabset>label:hover,
+.tabset>input:focus+label,
+.tabset>input:checked+label {
+    color: @border;
+}
+
+.tabset>label:hover::after,
+.tabset>input:focus+label::after,
+.tabset>input:checked+label::after {
+    background: @border;
+}
+
+.tabset>input:checked+label {
+    // border-color : @border;
+    // border-bottom: 1px solid @white;
+    background-color: @primery-dark!important;
+    margin-bottom: -1px;
+}
+
+.tab-panel {
+    border          : 1px solid @border;
+    background-color: @white;
+    padding         : 12px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.tabset {
+    max-width       : 100%;
+    background-color: @primery;
+}
+
+// Tabs level 2
+.tabSet-2>input[type="radio"] {
+    position  : absolute;
+    visibility: hidden;
+}
+
+.tabSet-2 .tab-panel-2 {
+    body {
+        padding: 12px;
+    }
+
+    display: none;
+}
+
+.tabSet-2>input:first-child:checked~.tab-panels-2>.tab-panel-2:first-child,
+.tabSet-2>input:nth-child(3):checked~.tab-panels-2>.tab-panel-2:nth-child(2),
+.tabSet-2>input:nth-child(5):checked~.tab-panels-2>.tab-panel-2:nth-child(3),
+.tabSet-2>input:nth-child(7):checked~.tab-panels-2>.tab-panel-2:nth-child(4),
+.tabSet-2>input:nth-child(9):checked~.tab-panels-2>.tab-panel-2:nth-child(5),
+.tabSet-2>input:nth-child(11):checked~.tab-panels-2>.tab-panel-2:nth-child(6) {
+    display: block;
+}
+
+.tabSet-2>label {
+    position     : relative;
+    display      : inline-block;
+    padding      : 12px 12px 12px;
+    border       : 1px solid transparent;
+    border-bottom: 0;
+    cursor       : pointer;
+    font-weight  : bold;
+    color        : @white;
+    transition   : 0.5s;
+}
+
+.tabSet-2>label::after {
+    // content   : "";
+    position  : absolute;
+    left      : 0px;
+    right     : 0px;
+    bottom    : 10px;
+    background: @white;
+    width     : 50%;
+    height    : 2.5px;
+    margin    : 0px auto;
+    transition: 0.5s;
+}
+
+.tabSet-2>label:hover,
+.tabSet-2>input:focus+label,
+.tabSet-2>input:checked+label {
+    color: @border;
+}
+
+.tabSet-2>label:hover::after,
+.tabSet-2>input:focus+label::after,
+.tabSet-2>input:checked+label::after {
+    background: @border;
+}
+
+.tabSet-2>input:checked+label {
+    // border-color : @border;
+    // border-bottom: 1px solid @white;
+    background-color: @primery-dark!important;
+    margin-bottom: -1px;
+}
+
+.tab-panel-2 {
+    border          : 1px solid @border;
+    background-color: @white;
+    padding         : 12px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.tabSet-2 {
+    max-width       : 100%;
+    background-color: @primery;
+}
