@@ -13,6 +13,23 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/product', function (Request $request) {
-    return $request->user();
+Route::prefix('product')->middleware(['cors', 'json.response'])->group(function () {
+// our routes to be protected will go in here
+    Route::middleware('auth:api')->group(function () {
+        // our routes to be protected will go in here
+        Route::group([], function () {
+            Route::get('/', 'ProductController@index');
+            Route::post('/', 'ProductController@store');
+            Route::get('/show/{id}', 'ProductController@show');
+            Route::put('/update/{id}', 'ProductController@update');
+            Route::delete('/destroy/{id}', 'ProductController@destroy');
+            Route::get('/query', 'ProductController@getProduct');
+        });
+        Route::prefix("cart")->group( function () {
+            // this part similar up (ProductController)
+        });
+
+    });
+;
+
 });

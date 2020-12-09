@@ -20,7 +20,7 @@ class UserStoreRequest extends FormRequest
             'email' => 'string|email|max:255',
             'mobile' => ["required","string","max:12","unique:users",new Mobile],
             'password' => 'string|min:6|confirmed',
-            'gender' => 'required|string',
+            'gender' => 'required|string|in:male,female',
         ];
     }
 
